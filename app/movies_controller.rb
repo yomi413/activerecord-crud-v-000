@@ -96,5 +96,5 @@ def can_destroy_all_items_at_once
   10.times do |i|
     Movie.create(title: "Movie_#{i}")
   end
-  binding.pry
+  Movie.destroy_all
 end
