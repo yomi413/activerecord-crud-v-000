@@ -85,10 +85,10 @@ def can_update_multiple_items_at_once
     Movie.create(title: "Movie_#{i}", release_date: 2000+i)
     # movie << new_movie
   end
-  
+  Movie.update_all(title: "A Movie")
   # Movie.all.update(title: "A Movie")
   # movie << new_movie
-  binding.pry
+  # binding.pry
   # Movie.update.where
 end
 
