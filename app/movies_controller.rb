@@ -88,7 +88,8 @@ end
 
 def can_destroy_a_single_item
   movie = Movie.create(title: "That One Where the Guy Kicks Another Guy Once")
-  binding.pry
+  movie.destroy
+  # binding.pry
 end
 
 def can_destroy_all_items_at_once
